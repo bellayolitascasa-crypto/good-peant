@@ -1,0 +1,19 @@
+{
+  "name": "好事花生",
+  "short_name": "好事花生",
+  "description": "记录每天发生的好事，以及它为什么会发生。",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#e9e3d7",
+  "theme_color": "#e9e3d7",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
