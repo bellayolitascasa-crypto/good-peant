@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#f7bd3e" />
   <title>Good Things</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -12,5 +14,10 @@
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <div id="modal-root"></div>
   <script src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("service-worker.js"));
+    }
+  </script>
 </body>
 </html>
